@@ -1,10 +1,41 @@
-to clone this app:
+to clone a LIVE copy of this app on OpenShift:
 
 1. `sudo gem install rhc` 
 2. `rhc setup`
 3. `rhc app create oakblightmaps nodejs --from-code=https://github.com/ryanj/oakblightmaps.git`
+4. `cd oakblightmaps` 
+5. `git remote add github git@github.com:openoakland/open-data-day-2013.git`
 
-Feel free to change or remove this file, it is informational only.
+# Getting the latest from the team
+1. `git pull github`
+
+# Publishing your changes to GitHub
+1. `git push github`
+
+# Updating your OpenShift app
+1. `git push`
+
+
+# Source Data
+is from ....?
+how we processed / formatted the source data...
+
+## Selecting ranges on Columns:
+User-facing selectors:
+* owner parcel count (composite data - pre calculate)
+* parcel value
+* building value (as percent of total value)
+* sale date - 2009 or older
+* use_code - zoning info / category
+
+Back-end values:
+* owner's mailing address
+* APN / parcel_id
+* owner name (top 100?)
+* street address
+* loc - geoJson data
+
+Feel free to change or remove this file, it's for informational purposes only.
 
 Repo Layout
 ===========
