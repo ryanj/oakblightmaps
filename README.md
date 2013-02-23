@@ -1,3 +1,9 @@
+to clone this app:
+
+1. `sudo gem install rhc` 
+2. `rhc setup`
+3. `rhc app create oakblightmaps nodejs --from-code=https://github.com/ryanj/oakblightmaps.git`
+
 Feel free to change or remove this file, it is informational only.
 
 Repo Layout
