@@ -1,8 +1,19 @@
-to clone this app:
+to clone a LIVE copy of this app on OpenShift:
 
 1. `sudo gem install rhc` 
 2. `rhc setup`
 3. `rhc app create oakblightmaps nodejs --from-code=https://github.com/ryanj/oakblightmaps.git`
+4. `cd oakblightmaps` 
+5. `git remote add github git@github.com:openoakland/open-data-day-2013.git`
+
+# Getting the latest from the team
+1. `git pull github`
+
+# Publishing your changes to GitHub
+1. `git push github`
+
+# Updating your OpenShift app
+1. `git push`
 
 Feel free to change or remove this file, it is informational only.
 
