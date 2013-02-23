@@ -21,16 +21,19 @@ is from ....?
 how we processed / formatted the source data...
 
 ## Selecting ranges on Columns:
-* total value
-* land value
-* owner's mailing address
+User-facing selectors:
 * owner parcel count (composite data - pre calculate)
+* parcel value
+* building value (as percent of total value)
+* sale date - 2009 or older
+* use_code - zoning info / category
+
+Back-end values:
+* owner's mailing address
 * APN / parcel_id
 * owner name (top 100?)
-* use_code - zoning info / category
 * street address
 * loc - geoJson data
-* sale date - 2009 or older
 
 Feel free to change or remove this file, it's for informational purposes only.
 
