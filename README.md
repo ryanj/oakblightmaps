@@ -15,7 +15,24 @@ to clone a LIVE copy of this app on OpenShift:
 # Updating your OpenShift app
 1. `git push`
 
-Feel free to change or remove this file, it is informational only.
+
+# Source Data
+is from ....?
+how we processed / formatted the source data...
+
+## Selecting ranges on Columns:
+* total value
+* land value
+* owner's mailing address
+* owner parcel count (composite data - pre calculate)
+* APN / parcel_id
+* owner name (top 100?)
+* use_code - zoning info / category
+* street address
+* loc - geoJson data
+* sale date - 2009 or older
+
+Feel free to change or remove this file, it's for informational purposes only.
 
 Repo Layout
 ===========
