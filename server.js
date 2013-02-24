@@ -122,6 +122,7 @@ var SampleApp = function() {
         self.createRoutes();
         self.app = express.createServer();
         self.app.use("/src", express.static(__dirname + '/src'));
+        self.app.use("/data", express.static(__dirname + '/data'));
 
 
         //  Add handlers for the app (from the routes).
