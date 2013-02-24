@@ -44,6 +44,7 @@ var SampleApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
+        self.zcache['webgl.html'] = fs.readFileSync('./webgl.html');
     };
 
 
@@ -107,8 +108,9 @@ var SampleApp = function() {
 
         self.routes['/'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
-            res.send(self.cache_get('index.html') );
+            res.send(self.cache_get('webgl.html') );
         };
+
     };
 
 
@@ -119,6 +121,8 @@ var SampleApp = function() {
     self.initializeServer = function() {
         self.createRoutes();
         self.app = express.createServer();
+        self.app.use("/src", express.static(__dirname + '/src'));
+
 
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
